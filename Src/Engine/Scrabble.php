@@ -142,10 +142,7 @@ class Scrabble
      */
     public function removeNonAlphaCharacters(string $string)
     {
-        /**
-         * todo replace this with a method to stip non alpha chars
-         */
-        return $string;
+        return preg_replace("/[^a-zA-Z]/", "", $string); // Jamie Stinson 23/09/2021
     }
 
     /**
